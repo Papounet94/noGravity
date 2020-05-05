@@ -45,7 +45,7 @@ public class Radar : MonoBehaviour
             // Test the distance from player to each detected object
             if (Vector3.Distance(radarObjects[index].transform.position, transform.position) > switchDistance)
             {
-                // switch to border objects if byeond display area
+                // switch to border objects if beyond display area
                 // look at the detected object
                 helpTransform.LookAt(radarObjects[index].transform);
                 // Position it at the border in the right position
