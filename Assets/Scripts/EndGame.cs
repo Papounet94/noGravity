@@ -26,7 +26,8 @@ public class EndGame : MonoBehaviour
             background.color = new Color(0.2f, 0.9f, 1.0f); // Cyanish color
             winImage.SetActive(true);
             looseImage.SetActive(false);
-            message.text = "You have reached the target! You are safe now.";
+            message.text = string.Format("You have reached the target in {0:N1} s! You are safe now.",
+                PersistentSettings.Instance.winTime);
             message.color = new Color(0f, 0f, 0f);
         }
     }

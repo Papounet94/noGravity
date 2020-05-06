@@ -10,6 +10,7 @@ public class PersistentSettings : MonoBehaviour
     public bool playerLoose;
     public string endMessage;
     public AudioSource music;
+    public float winTime;
         
 void Awake()
     {
