@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 700a7f75ac2f44fb0ae5ca2ce10aaa74
+  - enabled: 1
+    path: Assets/Scenes/Hi Score.unity
+    guid: e95d477d1310549a49766e15004cc9b4
   m_configObjects: {}

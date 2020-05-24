@@ -156,7 +156,7 @@ public class PlayerController : MonoBehaviour
 
     private void consumeAir()
     {
-        // ** need to add panic breath, and/or air leaks **
+        // TODO: ** need to add panic breath, and/or air leaks **
         airGauge.value -= breath * Time.deltaTime;
         // check if there is still air in the extravehicular suit
         if (airGauge.value < 0.1)
@@ -204,15 +204,27 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Target"))
         {
+            // Player wins
             // ** Need to add sound **
             goodMessage.text = "WIN";
             PersistentSettings.Instance.playerLoose = false;
-            SceneManager.LoadScene("End");
+
+            // Check if high score performed
+            if (PersistentSettings.Instance.winTime < Mathf.Max(PersistentSettings.Instance.hiScores.time))
+            {
+                // Case Yes : open scene Hi score to enter the name of the player
+                SceneManager.LoadScene("Hi Score");
+            }
+            else
+            {
+                // Go directly to End Scene
+                SceneManager.LoadScene("End");
+            }
         }
         else  // simple collision
         {
-            // ** Need to add random gas leak and/or air leak **
-            // ** Need to add sound **
+            // TODO: ** Need to add random gas leak and/or air leak **
+            // TODO: ** Need to add sound **
             badMessage.text = "Collision";
             Invoke("ClearMessage", msgDuration);
         }
