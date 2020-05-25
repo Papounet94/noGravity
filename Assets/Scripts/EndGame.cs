@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class EndGame : MonoBehaviour
@@ -11,16 +8,23 @@ public class EndGame : MonoBehaviour
     public Text message;
 
     public GameObject highScores;
-    private GameObject[] names;
-    private GameObject[] times;
+    private GameObject[] names = new GameObject[HiScore.maxScores];
+    private GameObject[] times = new GameObject[HiScore.maxScores];
 
     void Start()
     {
         background = GameObject.Find("Background").GetComponent<Image>();
 
         // Retrieves the GameObjects containing the fields to display
-        names = GameObject.FindGameObjectsWithTag("PlayerName");
-        times = GameObject.FindGameObjectsWithTag("PlayerScore");
+        // Does not work in WebGL because the fields are unordered
+        // names = GameObject.FindGameObjectsWithTag("PlayerName");
+        // times = GameObject.FindGameObjectsWithTag("PlayerScore");
+        // Every field has its own tag. Painful but works ...
+        for (int index = 0; index < HiScore.maxScores; index ++)
+        {
+            names[index] = GameObject.FindGameObjectWithTag("PN" + index);
+            times[index] = GameObject.FindGameObjectWithTag("PS" + index);
+        }
 
         if (PersistentSettings.Instance.playerLoose)
         {

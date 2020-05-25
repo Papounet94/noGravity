@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 130094198}
   m_Layer: 5
   m_Name: Score (2)
-  m_TagString: PlayerScore
+  m_TagString: PS2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 187597244}
   m_Layer: 5
   m_Name: Name (8)
-  m_TagString: PlayerName
+  m_TagString: PN8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 353040011}
   m_Layer: 5
   m_Name: Score (4)
-  m_TagString: PlayerScore
+  m_TagString: PS4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 353484256}
   m_Layer: 5
   m_Name: Score (1)
-  m_TagString: PlayerScore
+  m_TagString: PS1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 368850129}
   m_Layer: 5
   m_Name: Name (6)
-  m_TagString: PlayerName
+  m_TagString: PN6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 510904420}
   m_Layer: 5
   m_Name: Name (2)
-  m_TagString: PlayerName
+  m_TagString: PN2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1694,7 +1694,7 @@ GameObject:
   - component: {fileID: 1112076349}
   m_Layer: 5
   m_Name: Name (4)
-  m_TagString: PlayerName
+  m_TagString: PN4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 1145144414}
   m_Layer: 5
   m_Name: Name (0)
-  m_TagString: PlayerName
+  m_TagString: PN0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1850,7 +1850,7 @@ GameObject:
   - component: {fileID: 1169195279}
   m_Layer: 5
   m_Name: Name (9)
-  m_TagString: PlayerName
+  m_TagString: PN9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +2044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -33.7}
+  m_AnchoredPosition: {x: 0, y: -33.69995}
   m_SizeDelta: {x: 0, y: 67.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1186334125
@@ -2060,7 +2060,7 @@ GameObject:
   - component: {fileID: 1186334127}
   m_Layer: 5
   m_Name: Score (3)
-  m_TagString: PlayerScore
+  m_TagString: PS3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2352,7 +2352,7 @@ GameObject:
   - component: {fileID: 1317508421}
   m_Layer: 5
   m_Name: Score (6)
-  m_TagString: PlayerScore
+  m_TagString: PS6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2707,7 +2707,7 @@ GameObject:
   - component: {fileID: 1419524246}
   m_Layer: 5
   m_Name: Score (7)
-  m_TagString: PlayerScore
+  m_TagString: PS7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2785,7 +2785,7 @@ GameObject:
   - component: {fileID: 1643967613}
   m_Layer: 5
   m_Name: Score (0)
-  m_TagString: PlayerScore
+  m_TagString: PS0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2863,7 +2863,7 @@ GameObject:
   - component: {fileID: 1679381992}
   m_Layer: 5
   m_Name: Name (3)
-  m_TagString: PlayerName
+  m_TagString: PN3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2941,7 +2941,7 @@ GameObject:
   - component: {fileID: 1688257181}
   m_Layer: 5
   m_Name: Name (7)
-  m_TagString: PlayerName
+  m_TagString: PN7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3093,7 +3093,7 @@ GameObject:
   - component: {fileID: 1831152882}
   m_Layer: 5
   m_Name: Score (9)
-  m_TagString: PlayerScore
+  m_TagString: PS9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3441,7 +3441,7 @@ GameObject:
   - component: {fileID: 1946176218}
   m_Layer: 5
   m_Name: Name (5)
-  m_TagString: PlayerName
+  m_TagString: PN5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3519,7 +3519,7 @@ GameObject:
   - component: {fileID: 1951533615}
   m_Layer: 5
   m_Name: Name (1)
-  m_TagString: PlayerName
+  m_TagString: PN1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3885,7 +3885,7 @@ GameObject:
   - component: {fileID: 2027323581}
   m_Layer: 5
   m_Name: Score (8)
-  m_TagString: PlayerScore
+  m_TagString: PS8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4046,7 +4046,7 @@ GameObject:
   - component: {fileID: 2070286801}
   m_Layer: 5
   m_Name: Score (5)
-  m_TagString: PlayerScore
+  m_TagString: PS5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

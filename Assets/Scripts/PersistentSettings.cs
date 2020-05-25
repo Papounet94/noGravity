@@ -149,7 +149,7 @@ public class HiScore
             index++;
         }
         // Right position found
-        // Shift down following high scores (last one is lost)
+        // Shifts down the following high scores (last one is lost)
         for (int i = maxScores - 1; i > index; i--)
         {
             PersistentSettings.Instance.hiScores.time[i] =

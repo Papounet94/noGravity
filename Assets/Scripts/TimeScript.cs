@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class TimeScript : MonoBehaviour
 {
-    [SerializeField] float timeElapsed = 0f;
+    //[SerializeField] float timeElapsed = 0f;
     [SerializeField] float timeAtStart;
 
     private TextMeshProUGUI timeText;

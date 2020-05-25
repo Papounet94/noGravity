@@ -6,8 +6,26 @@ TagManager:
   tags:
   - Target
   - Obstacle
-  - PlayerName
-  - PlayerScore
+  - PN0
+  - PN1
+  - PN2
+  - PN3
+  - PN4
+  - PN5
+  - PN6
+  - PN7
+  - PN8
+  - PN9
+  - PS0
+  - PS1
+  - PS2
+  - PS3
+  - PS4
+  - PS5
+  - PS6
+  - PS7
+  - PS8
+  - PS9
   layers:
   - Default
   - TransparentFX
