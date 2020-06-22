@@ -26,6 +26,7 @@ TagManager:
   - PS7
   - PS8
   - PS9
+  - Door
   layers:
   - Default
   - TransparentFX

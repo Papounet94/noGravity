@@ -36,9 +36,14 @@ public class PlayerController : MonoBehaviour
     // speeds of the player (translation and rotation)
     public float currentVelocity;
     public float currentAngularVelocity;
+    // relative speed of player to target
+    public float projSpeed;
 
     // Reference to the player Rigidbody
     private Rigidbody playerRB;
+
+    // Reference to the target Rigidbody
+    public Rigidbody targetRB;
 
     public bool gameOver = false;
     public Text goodMessage, badMessage;
@@ -57,7 +62,8 @@ public class PlayerController : MonoBehaviour
         linearSpeed = GameObject.Find("Speed Field").GetComponent<InputField>();
         rotSpeed = GameObject.Find("Rot Field").GetComponent<InputField>();
         playerSound = GetComponent<AudioSource>();
-
+        // Get reference to Target rigidbody
+        targetRB = GameObject.Find("ISS").GetComponent<Rigidbody>();
         // Not needed currently but may be useful if this flag is used
         // instead of the gameOver flag in the scene
         PersistentSettings.Instance.playerLoose = false;
@@ -131,12 +137,19 @@ public class PlayerController : MonoBehaviour
                     consumeGas(1, jetSound);
                 }
 
-                // stores current speeds (needed for crash test)
-                currentVelocity = playerRB.velocity.magnitude;
+                // stores current speeds
+                // (needed for gas consumption when stopping all movements)
+                currentVelocity = playerRB.velocity.magnitude; 
                 currentAngularVelocity = playerRB.angularVelocity.magnitude;
+                // Computation of relative velocity to Target
+                // First get the line between Target and Player
+                Vector3 dir = (targetRB.position - playerRB.position).normalized;
+                // Then project the Target Speed and the Player Speed Vectors
+                // onto the line 'dir' and subtract them
+                projSpeed = Vector3.Dot(dir, playerRB.velocity) - Vector3.Dot(dir, targetRB.velocity);
 
                 // displays speeds
-                linearSpeed.text = string.Format("{0:N1} m/s", currentVelocity);
+                linearSpeed.text = string.Format("{0:N1} m/s", projSpeed);
                 rotSpeed.text = string.Format("{0:N1} °/s",
                     currentAngularVelocity / Mathf.PI * 180);
 
@@ -192,7 +205,7 @@ public class PlayerController : MonoBehaviour
         // else if target --> win
         // else simple collision
 
-        if (currentVelocity > maxSpeed)
+        if (projSpeed > maxSpeed)
         {
             gameOver = true;
 

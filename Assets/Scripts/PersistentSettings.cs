@@ -22,6 +22,7 @@ public class PersistentSettings : MonoBehaviour
     public float winTime;
     public string playerName;
     public HiScore hiScores = new HiScore();
+    public int stage = 1;
 
     const string filename = "/savefile.save";
 

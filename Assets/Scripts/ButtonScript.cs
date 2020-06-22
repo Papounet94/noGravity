@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,11 +19,16 @@ public class ButtonScript : MonoBehaviour
     }
     public void Quit()
     {
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     public void Restart()
     {
         SceneManager.LoadScene("Game");
+        PersistentSettings.Instance.stage += 1;
     }
 }
